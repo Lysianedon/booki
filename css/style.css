@@ -61,21 +61,23 @@ h1{
 }
 .section-one .searchbar{
     margin: 4vh 0 0 0;
-    /* border: 1px solid black; */
+    display: flex;
 }
 .section-one .searchbar .icon-map{
-    display: inline;
-    padding: .8%;
-    height: 49px;
+    padding: 1%;
+    height: 50px;
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
 }
 .section-one .searchbar input{
-    height: 49px;
-    border-radius: 15px 0px 0px 15px;
+    height: 50px;
     border: 1px solid #F2F2F2;
     margin: 0;
+}
+.section-one .searchbar input[value]{
+    padding-left: 1%;
+    font-weight: 700;
 }
 .section-one .searchbar button{
     color: white;
@@ -83,7 +85,7 @@ h1{
     border: 1px solid var(--custom-blue);
     padding: 15px 16px;
     width: 132px;
-    height: 49px;
+    height: 50px;
     font-weight: 700;
     font-size: 1rem;
     border-radius: 0px 15px 15px 0px;
@@ -228,7 +230,6 @@ h1{
     font-size: 18px;
 }
 /*--------------FOOTER ------------ */
-
 footer{
     background-color: #F2F2F2;
     width: 92vw;
@@ -238,8 +239,6 @@ footer .col-wrapper{
     display: flex;
     align-items:center;
     justify-content:space-evenly;
-    /* width: 90%; */
-
 }
 footer .cols h4{
     margin: 0 0 3vh 0;
@@ -250,8 +249,40 @@ footer .cols a{
     text-decoration: none;
     line-height: 170%;
 }
+/* RESPONSIVE * RESPONSIVE *RESPONSIVE *RESPONSIVE *RESPONSIVE *RESPONSIVE  */
+/* TABLETS */
 
-footer .col-3{
-    /* margin: 0 30vw 0 0; */
+@media(max-width: 1280px){
+    .section-two{
+        flex-direction: column;
+    }
+    .section-two .main-block{
+        margin: 8vh 5vh 8vh 0;
+        padding: 6vh 2vw 0 2vw;
+    }
+    .section-two .main-block article{
+        margin: 1vw;
+        width: 30%;
+    }
+    .section-two .main-block article .picture-hotel{
+        width: 100%;
+    }
+    .section-two .side-block .articles{
+        display: flex;
+        justify-content: space-evenly; 
+        padding: 0 0 4vh 0;
+    }
+    .section-two .side-block article{
+        width: 30%;
+        height: auto;
+    }
+    .side-block article .details{
+        padding: 3vh 1vw 0 1vw;
+    }
+    .section-two .side-block article:not(.first){
+        margin: 0;
+    }
+    .section-two .side-block .subtitle img{
+        width: auto;
+    }
 }
-
