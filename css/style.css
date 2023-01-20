@@ -179,34 +179,79 @@ h1{
     justify-content: space-between;
     margin: 0 0 3vh 0;
 }
-
 .side-block .subtitle img{
     width: 5%;
     height: 3%;
     max-width: 80%;
 }
-
 /*----------- SECTION 3 ---------- */
 .section-three{
     margin: 8vh 0;
 }
 .section-three .row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* width: 92vw; */
+    padding: 0 3vw 0 0;
     /* border: 1px solid black; */
 }
 .section-three h2{
     margin: 0 0 4vh 1vw;
 }
-
 .section-three .row article{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background-color: #FFFFFF;
     border-radius: 20px;
-    box-shadow: rgba(154, 151, 151, 0.35) 0px 5px 15px;
-    width: 20%;
+    box-shadow: rgba(174, 172, 172, 0.35) 0px 3px 10px;
+    width: 22%;
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
-.section-three .row article img{
-    max-width: 100%;
-    border-radius: 20px 0px 0 0;
+.section-three .row  .art-1{
+    background-image: url('../images/marseille/one.png');
 }
+.section-three .row  .art-2{
+    background-image: url('../images/marseille/two.png');
+}
+.section-three .row  .art-3{
+    background-image: url('../images/marseille/three.png');
+}
+.section-three .row  .art-4{
+    background-image: url('../images/marseille/four.png');
+}
+.section-three .row article h4{
+    border-radius: 0 0 20px 20px;
+    background-color: #FFFFFF;
+    padding: 6% 6% 6% 7%;
+    font-size: 18px;
+}
+/*--------------FOOTER ------------ */
+
+footer{
+    background-color: #F2F2F2;
+    width: 92vw;
+    padding: 6vh;
+}
+footer .col-wrapper{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    /* width: 90%; */
+
+}
+footer .cols h4{
+    margin: 0 0 3vh 0;
+}
+footer .cols a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    line-height: 170%;
+}
+
+footer .col-3{
+    /* margin: 0 30vw 0 0; */
+}
+
