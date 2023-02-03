@@ -54,7 +54,6 @@ h1{
     font-style: normal;
     font-weight: 700;
     font-size: 1.5em;
-    line-height: 20px;
     letter-spacing: .030vw;  
 }
 .section-one h5{
@@ -106,7 +105,7 @@ h1{
 .section-one .filters button{
     display: flex;
     padding: 8px 25px;
-    margin: 0 1.5vw;
+    margin: 0 1.5vw 4vw 0;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     background-color: transparent;
@@ -307,15 +306,25 @@ footer .cols a{
 
 /* TABLETS AND MOBILE */
 @media(max-width: 950px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    section, nav{
+        padding: 0 2vw 0 3vw;
+    }
     nav ul li button{
         height: 18vh;
         text-align: bottom;
         background-color: transparent;
         border: 2px solid transparent;
-        width: 20vw;
+        width: 22vw;
     }
     .section-one .filters button{
         font-size: .8rem;
+    }
+    .section-one .filters{
+        flex-wrap: wrap;
     }
     .section-two{
         flex-direction: column;
@@ -368,7 +377,6 @@ footer .cols a{
         justify-content: space-evenly;
         padding: 0; 
     }
-
     .section-two .side-block article{
         width: 30%;
         height: auto;
@@ -409,19 +417,41 @@ footer .cols a{
     }
     .section-three .row article{
         height: 27vw;
+        /* height: 37vw; */
         background-repeat: no-repeat !important;
-
     }
     .section-three .row article h4{
         padding: 7% 6% 12% 10%;
         font-size: 15px;
         height: 8vh;
     }
+    footer{
+        margin: auto;
+    }
+}
+@media(max-width: 590px){
+    nav ul li button{
+        width: 26vw;
+    }
+    .section-two .main-block .rows article .details h4, .section-two .side-block article h4 {
+        font-size: 2vw;
+    }
+    .section-two .main-block .rows article .details p, .section-two .side-block article .details p{
+        font-size: 2vw;
+    }
+    .section-three .row article{
+        height: 40vw;
+        background-size: cover;
+    }
+    .section-three .row article h4{
+        font-size: .7rem;
+    }
+
+    footer .cols{
+        margin: 2%;
+    }
 }
 @media(max-width: 430px){
-    body{
-        padding: 0;
-    }
     .section-one{
         padding: 0 4vw;
     }
@@ -462,9 +492,6 @@ footer .cols a{
         padding: 0 5%;
         font-size: 1rem;
     }
-    .section-one .filters{
-        flex-wrap: wrap;
-    }
     .section-one .filters h5{
         display: block;
         width: 100vw;
@@ -481,6 +508,8 @@ footer .cols a{
     }
     .section-two{
         flex-direction: column-reverse;
+        padding-left: 0 ;
+        padding-right: 0 ;
     }
     .section-two .side-block h2, .section-two .main-block h2, .section-three h2{
         font-size: 1.6rem;
@@ -489,8 +518,8 @@ footer .cols a{
         font-size: 1rem;
         margin: 0 0 3vh 0;
     }
-    .section-two .side-block article p, .section-two .main-block .rows article .details p{
-        font-size: 15px;
+    .section-two .side-block article .details p, .section-two .main-block .rows article .details p{
+        font-size: 14px;
     }
     .section-two .main-block{
         border-radius: 0;
@@ -508,8 +537,7 @@ footer .cols a{
         margin: 2vh 0;
     }
     .section-two .main-block img:not(.stars img){
-        height: 30vh ;
-        /* width: 90%; */
+        height: 18vh ;
     }
     .section-two .side-block{
         margin: 6vh 0 0 0;
@@ -594,8 +622,8 @@ footer .cols a{
     }
     .section-three .row article h4{
         padding: 6% 6% 12% 10%;
-        height: 6.7vh;
-        font-size: 1.1rem;
+        height: 8vh;
+        font-size: 1rem;
     }
     .section-three h2{
         margin: 0 0 0 6vw;
@@ -603,7 +631,7 @@ footer .cols a{
     }
     .section-three .row article{
         width: 88vw;
-        height: 39vh;
+        height: 31vh;
         margin: 2vh 0;
         background-size: cover !important;
     }
