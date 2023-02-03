@@ -120,6 +120,7 @@ h1{
     font-weight: bold;
     font-size: 1rem;
     line-height: 300%;
+    margin: 0 1% 0 0;
 }
 .section-one .infos{
     display: flex;
