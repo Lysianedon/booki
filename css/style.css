@@ -37,21 +37,25 @@ nav a {
     text-decoration: none;
     font-size: 1rem;
     cursor: pointer;
-}
-nav ul li button{
     height: 18vh;
-    text-align: bottom;
     background-color: transparent;
     border: 2px solid transparent;
     width: 13vw;
+    padding: 6vh 0 0 0;
     cursor: pointer;
+    text-align: center;
 }
-nav ul li button:hover{
+
+nav ul li :hover{
     border-top: 2px solid var(--custom-blue);
 }
-nav ul li button:hover > * {
+nav ul .logo{
+    border: none;
+}
+nav ul li:hover > * {
     color: var(--custom-blue);
 }
+
 nav .logo{
     width: 85%;
 }
@@ -322,9 +326,14 @@ footer .cols a{
     section, nav{
         padding: 0 2vw 0 3vw;
     }
-    nav ul li button{
-        height: 18vh;
-        text-align: bottom;
+    nav img{
+        margin: 5vh 0 0 0;
+    }
+    nav ul{
+        margin: auto;
+    }
+    nav ul li{
+        height: 16vh;
         background-color: transparent;
         border: 2px solid transparent;
         width: 22vw;
@@ -439,8 +448,27 @@ footer .cols a{
     }
 }
 @media(max-width: 590px){
-    nav ul li button{
-        width: 26vw;
+    nav a {
+        border: 0;
+    }
+    nav ul > * {
+        border: transparent;
+    }
+    nav ul li{
+        width: 50vw;
+        border: 0 solid transparent;
+    }
+    nav ul li :hover{
+        border-top: 0;
+    }
+    nav ul li:hover{
+        border-bottom: 2px solid var(--custom-blue);
+        border-top: none;
+    }
+    nav ul li a{
+        text-align: center;
+        margin: auto;
+        border: 0;
     }
     .section-two .main-block .rows article .details h4, .section-two .side-block article h4 {
         font-size: 2vw;
@@ -477,15 +505,8 @@ footer .cols a{
     }
     nav ul li{
         text-align: center;
-    }
-    nav ul li button{
         height: 7vh;
-        border-top: 0;
         width: 50vw;
-    }
-    nav ul li button:hover{
-        border-bottom: 2px solid var(--custom-blue);
-        border-top: 0;
     }
     .section-one .searchbar input{
         width: 62vw;
@@ -532,7 +553,7 @@ footer .cols a{
     }
     .section-two .main-block{
         border-radius: 0;
-        margin: 8vh 0h 8vh 0;
+        margin: 8vh 0 8vh 0;
         background-color: transparent;
     }
     .section-two .main-block h2{
