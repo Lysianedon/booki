@@ -25,11 +25,18 @@ nav ul{
 nav ul li{
     display: block;
 }
+button{
+    cursor: pointer;
+}
+article{
+    cursor: pointer;
+}
 nav a {
     display: block;
     color: black;
     text-decoration: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 nav ul li button{
     height: 18vh;
@@ -37,6 +44,7 @@ nav ul li button{
     background-color: transparent;
     border: 2px solid transparent;
     width: 13vw;
+    cursor: pointer;
 }
 nav ul li button:hover{
     border-top: 2px solid var(--custom-blue);
